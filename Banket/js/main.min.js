@@ -10,9 +10,6 @@ const parallax = event => {
     element.style.transform = `translate(${event.clientX / 100}px,${event.clientY / 100}px )`;
   }
 }
-document.querySelector('body').addEventListener('mousemove', parallax);
-
-
 
 
 const tabsMenu = (items, content, desc) => {
@@ -44,9 +41,15 @@ const tabsMenu = (items, content, desc) => {
   }
 }
 
-const iceCreamImage = document.querySelectorAll('.iceCream__image')
-const iceCreamDesc = document.querySelectorAll('.iceCream__desc')
-const iceCreamTab = document.querySelectorAll('.tabs__item-hover')
 
-tabsMenu(iceCreamTab, iceCreamImage, iceCreamDesc)
-new WOW().init();
+window.onload = () => {
+  document.querySelector('body').addEventListener('mousemove', parallax);
+
+  const iceCreamImage = document.querySelectorAll('.iceCream__image')
+  const iceCreamDesc = document.querySelectorAll('.iceCream__desc')
+  const iceCreamTab = document.querySelectorAll('.tabs__item-hover')
+
+  tabsMenu(iceCreamTab, iceCreamImage, iceCreamDesc)
+  document.querySelector('.preloader').classList.add('done')
+  new WOW().init();
+}
