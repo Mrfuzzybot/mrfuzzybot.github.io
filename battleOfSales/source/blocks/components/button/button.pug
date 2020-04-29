@@ -1,0 +1,5 @@
+mixin button(text, id, link)
+  if (link)
+    a(href=link class="button" id=id)=text
+  else 
+    button(class="button" id=id)=text

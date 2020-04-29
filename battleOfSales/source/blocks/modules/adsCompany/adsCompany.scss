@@ -1,0 +1,72 @@
+.adsCompany {
+  padding-bottom: 120px;
+  background-image: url('../img/adsCompany/background.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  &-text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.2;
+
+    margin-top: 50px;
+  }
+  &-wrap {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    .item {
+      width: 120px;
+      text-align: center;
+      &__image {
+        height: 70px;
+        background: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 1.2;
+      }
+    }
+  }
+  &__bottom {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 700;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .adsCompany {
+    &-wrap {
+      flex-wrap: wrap;
+      .item {
+        width: 30%;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 578px) {
+  .adsCompany {
+    &-wrap {
+      .item {
+        width: 45%;
+      }
+    }
+  }
+}

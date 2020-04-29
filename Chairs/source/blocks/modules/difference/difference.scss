@@ -1,0 +1,149 @@
+.difference {
+  padding-top: 70px;
+  padding-bottom: 50px;
+  &__top {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    span {
+      box-sizing: content-box;
+      display: inline-block;
+      max-width: 150px;
+      font-size: 22px;
+      font-family: 'MuseoSansCyrl-700';
+      line-height: 1.2;
+      padding: 0 30px;
+    }
+    .left {
+      text-align: right;
+    }
+    .right {
+      color: #68b0c9;
+    }
+  }
+  &-wrap {
+    background-image: url('../img/difference/product.png');
+    background-position: 52% center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    .left {
+      .difference__item {
+        text-align: end;
+        color: #939393;
+        &:nth-child(1):after {
+          background-image: url('../img/difference/gray_arrow-1.png');
+          left: calc(100% + 20px);
+          width: 80px;
+          height: 45px;
+          top: 0;
+        }
+        &:nth-child(2):after {
+          background-image: url('../img/difference/gray_arrow-2.png');
+          left: calc(100% + 20px);
+          width: 80px;
+          height: 30px;
+          top: 0;
+        }
+        &:nth-child(3):after {
+          background-image: url('../img/difference/gray_arrow-3.png');
+          left: calc(100% + 20px);
+          width: 80px;
+          height: 25px;
+          top: -15px;
+        }
+        &:nth-child(4):after {
+          background-image: url('../img/difference/gray_arrow-4.png');
+          left: calc(100% + 20px);
+          width: 80px;
+          height: 40px;
+          top: -30px;
+        }
+      }
+    }
+    .right {
+      .difference__item {
+        color: #68b0c9;
+        &:nth-child(1):after {
+          background-image: url('../img/difference/blue_arrow-1.png');
+          right: calc(100% + 20px);
+          width: 80px;
+          height: 45px;
+          top: 0;
+        }
+        &:nth-child(2):after {
+          background-image: url('../img/difference/blue_arrow-2.png');
+          right: calc(100% + 20px);
+          width: 80px;
+          height: 30px;
+          top: 0;
+        }
+        &:nth-child(3):after {
+          background-image: url('../img/difference/blue_arrow-3.png');
+          right: calc(100% + 20px);
+          width: 80px;
+          height: 25px;
+          top: -15px;
+        }
+        &:nth-child(4):after {
+          background-image: url('../img/difference/blue_arrow-4.png');
+          right: calc(100% + 20px);
+          width: 80px;
+          height: 40px;
+          top: -30px;
+        }
+
+
+      }
+    }
+  }
+  &__item {
+    position: relative;
+    font-size: 15px;
+    max-width: 220px;
+    line-height: 1.2;
+    margin-bottom: 35px;
+    font-family: 'MuseoSansCyrl-700';
+    &:after {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      content: '';     
+      position: absolute;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .difference {
+    &-wrap {
+      background-image: none;
+    }
+    .left, .right {
+      width: 50%;
+    }
+    &__item{
+      max-width: 100%;
+      padding: 0 5%;
+      &:after {
+        content: none;
+      }
+    }
+    &__top span{
+      padding: 0 2.5%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .difference {
+    &__item {
+      font-size: 14px;
+    }
+    &__top span{
+      font-size: 20px;
+    }
+  }
+}

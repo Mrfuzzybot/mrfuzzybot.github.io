@@ -1,0 +1,42 @@
+.header {
+  &__wrap{
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__tel {
+    &-wrap{
+      line-height: 1;
+      margin-bottom: 7px;
+    }
+    font-family: 'MuseoSansCyrl-700';
+    font-size: 24px;
+    color: #5e5e5e;
+  }
+  &__button {
+    &-wrap {
+      text-align: end;
+    }
+    font-family: 'MuseoSansCyrl-500';
+    font-size: 14px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    color: #5892a6;
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    &__logo img{
+      height: 60px;
+    }
+    &__tel {
+      font-size: 20px;
+    }
+  }
+}

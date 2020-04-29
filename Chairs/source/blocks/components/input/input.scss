@@ -1,0 +1,13 @@
+.input {
+  border-radius: 15px;
+  border: 1px solid #e8e8e8;
+  height: 40px;
+  width: 220px;
+  padding: 0 30px;
+  outline: none;
+  text-align: center;
+  font-family: 'MuseoSansCyrl-500';
+  &:focus {
+    border: 1px solid #5892a6;
+  }
+}

@@ -1,0 +1,57 @@
+.sertification {
+  background-color: #f1f6fa;
+  padding-bottom: 100px;
+  &-wrap{
+    display: flex;
+    justify-content: space-between;
+  }
+  .sertificate {
+    margin: 0 40px;
+  }
+  &-text {
+    max-width: 390px;
+    p {
+      font-size: 18px;
+      color: #323232;
+      line-height: 1.2;
+      margin-bottom: 30px;
+      font-family: "MuseoSansCyrl-500";
+    }
+  }
+  &-title {
+    color: #68b0c9;
+    font-size: 20px;
+    font-family: "MuseoSansCyrl-700";
+    line-height: 1.2;
+    margin-bottom: 50px;
+    position: relative;
+    padding-left: 70px;
+  }
+  .warning-icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 40px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    margin-right: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='48px' height='42px'%3E%3Cpath fill-rule='evenodd' fill='rgb(104, 176, 201)' d='M47.000,39.000 C46.452,40.355 44.000,41.000 44.000,41.000 L4.000,41.000 C4.000,41.000 1.936,41.220 1.000,39.000 C0.486,37.782 2.000,36.000 2.000,36.000 L20.000,3.000 C20.000,3.000 22.112,0.020 24.000,-0.000 C25.888,-0.020 28.000,3.000 28.000,3.000 L46.206,35.545 C46.206,35.545 47.555,37.627 47.000,39.000 ZM24.000,10.000 C21.682,9.936 21.000,13.000 21.000,13.000 L22.000,26.000 C22.000,26.000 22.913,28.039 24.000,28.000 C25.087,27.960 25.951,26.889 26.000,26.000 C26.049,25.111 27.000,13.000 27.000,13.000 C27.000,13.000 26.318,10.063 24.000,10.000 ZM24.000,30.000 C22.343,30.000 21.000,31.343 21.000,33.000 C21.000,34.657 22.343,36.000 24.000,36.000 C25.657,36.000 27.000,34.657 27.000,33.000 C27.000,31.343 25.657,30.000 24.000,30.000 Z'/%3E%3C/svg%3E");
+  }
+}
+
+@media (max-width: 768px) {
+  .sertification {
+    &-wrap {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    &-text {
+      padding: 0 10%;
+      max-width: 100%;
+    }
+  }
+}

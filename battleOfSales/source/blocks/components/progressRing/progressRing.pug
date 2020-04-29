@@ -1,0 +1,17 @@
+mixin progressRing(text, color, percent)
+  .progress-ring-bg
+    svg.progress-ring
+      circle(
+              class=`progress-ring__circle-bg`
+              stroke-width="6" 
+              cx="66" cy="66" r="59" 
+              fill="transparent"
+              stroke="#e8e8e8"
+            )
+      circle(
+            class=`progress-ring__circle ${color}` 
+            stroke-width="6" 
+            cx="66" cy="66" r="59" 
+            fill="transparent" stroke-dashoffset=percent
+          )
+      span=text

@@ -1,0 +1,16 @@
+-
+  const arrNumbers = [
+    {numb: '8', text: 'Лет на рынке'},
+    {numb: '21 645', text: 'кресел продано'},
+    {numb: '1 254', text: 'что-то сделано'},
+    {numb: '45', text: 'заказов в день'},
+  ]
+
+section.numbers
+  .container-small
+    .numbers-wrap
+      each subItem in arrNumbers
+        .numbers__item
+          .item__numb= subItem.numb
+          .item__desc= subItem.text
+          

@@ -1,0 +1,87 @@
+.contacts {
+  padding-top: 75px;
+  padding-bottom: 100px;
+  position: relative;
+  overflow: hidden;
+  .paralax {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center 170%;
+    background-image: url('../img/contacts/paralax.png');
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+  .content {
+    position: relative;
+    z-index: 2;
+  }
+  &__top{
+    text-align: center;
+    &-title {
+      font-size: 30px;
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 50px;
+    }
+    &-desc {
+      font-size: 16px;
+      font-weight: 300;
+      max-width: 790px;
+      margin: 0 auto;
+    }
+  }
+  &__form {
+    margin-top: 50px;
+    padding: 0 50px;
+    .form__top {
+      display: flex;
+      margin: 0 -15px;
+      padding-bottom: 30px;
+      .input-group {
+        width: 33.33%;
+        padding: 0 15px;
+      }
+    }
+    .form__center {
+      margin-bottom: 30px;
+    }
+    .form__button{
+      margin-top: 40px;
+      text-align: center;
+    }
+  }
+  .input-group{
+    input {
+      border: 2px solid #dddddd;
+      height: 50px;
+      width: 100%;
+      padding-left: 20px;
+    }
+    textarea {
+      border: 2px solid #dddddd;
+      width: 100%;
+      padding-left: 20px;
+      padding-top: 20px;
+      height: 190px;
+      resize: none;
+    }
+  }
+}
+
+@media (max-width: 768px ) {
+  .contacts__form {
+    padding: 0;
+    .form__top {
+      flex-direction: column;
+      padding-bottom: 0; 
+      .input-group {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

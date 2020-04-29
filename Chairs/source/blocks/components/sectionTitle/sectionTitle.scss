@@ -1,0 +1,14 @@
+.sectionTitle{
+  padding: 80px 0;
+  font-size: 36px;
+  text-align: center;
+  color: #535353;
+  font-family: 'MuseoSansCyrl-700';
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 30px;
+  }
+}

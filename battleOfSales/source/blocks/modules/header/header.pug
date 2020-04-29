@@ -1,0 +1,39 @@
+-
+  const navItems = [
+    {text: 'Как будет проходить', link: '#about'},
+    {text: 'Кто может участвовать', link: '#whocan'},
+    {text: 'Тарифы', link: '#tarifs'},
+    {text: 'Организаторы', link: '#organizators'},
+    {text: 'Контакты', link: '#contacts'},
+    {text: 'Учавствовать', link: '#'},
+  ]
+
+header.header
+  .container
+    .header__top
+      button.aside-open &#9776;
+      a(href='#' class='header__logo')
+        img(src="./assets/img/header/logo.png", alt="")
+      nav.header__nav
+        ul.nav__list
+          each subItem in navItems 
+            li.nav__item
+              a(href=subItem.link)=subItem.text
+    .header__center
+      .paralax
+      .content
+        .whiteBg станьте участником
+        .title
+          img(src="./assets/img/header/title.png", alt="")
+        .blueBg в Челябинске
+    .header__bottom
+      P
+        strong «Битва Скидок» — городская распродажа,
+      p которая пройдет в розничных магазинах и компаниях Челябинска. Рекламная кампания проекта охватит более миллиона жителей города и области.
+      +button('Участвовать')
+  .header__drawer
+      button.closeDrawer &times;
+      ul.nav__list
+        each subItem in navItems 
+          li.nav__item
+            a(href=subItem.link class="drawer__link")=subItem.text

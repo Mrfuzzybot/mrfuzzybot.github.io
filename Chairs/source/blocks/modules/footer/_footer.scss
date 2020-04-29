@@ -1,0 +1,42 @@
+.footer {
+  &-wrap {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__link {
+    text-decoration: underline;
+    font-size: 14px;
+    color: #68b0c9;
+  }
+  &__right{
+    text-align: end;
+    p{
+      line-height: 1;
+      font-size: 14px;
+      color: #505050;
+    }
+  } 
+}
+
+@media (max-width: 768px) {
+  .footer{
+    &-wrap {
+      flex-direction: column;
+    }
+    img {
+      margin-bottom: 20px;
+    }
+    &__link {
+      margin-bottom: 20px;
+    }
+    &__right {
+      text-align: center;
+      p {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+

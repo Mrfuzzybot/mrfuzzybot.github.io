@@ -1,0 +1,34 @@
+-
+  const arrayOfWhoCan = [
+    {text: 'Обувь', icon: 'whoCan_1.png'},
+    {text: 'Одежда', icon: 'whoCan_2.png'},
+    {text: 'Меха', icon: 'whoCan_3.png'},
+    {text: 'Детские товары', icon: 'whoCan_4.png'},
+    {text: 'Ювелирные изделия', icon: 'whoCan_5.png'},
+    {text: 'Бытовая электроника', icon: 'whoCan_6.png'},
+    {text: 'Стройматериалы', icon: 'whoCan_7.png'},
+    {text: 'Посуда', icon: 'whoCan_8.png'},
+    {text: 'Спортивные товары', icon: 'whoCan_9.png'},
+    {text: 'Товары для активного отдыха', icon: 'whoCan_10.png'},
+    {text: 'Продукты', icon: 'whoCan_11.png'},
+    {text: 'Автомобили и комплектующие', icon: 'whoCan_12.png'},
+    {text: 'Медицинские центры', icon: 'whoCan_13.png'},
+    {text: 'Стоматологии', icon: 'whoCan_14.png'},
+    {text: 'Салоны оптики', icon: 'whoCan_15.png'},
+    {text: 'Застройщики недвижимости', icon: 'whoCan_16.png'},
+    {text: 'Загородные поселки', icon: 'whoCan_17.png'},
+    {text: 'Фитнес-центры', icon: 'whoCan_18.png'},
+  ]
+
+section.whoCan#whocan
+  .container
+    +sectionTitle('Кто может учавствовать?', 'green', 'white')
+    .whoCan__items
+      each subItem in arrayOfWhoCan
+        .whoCan__item
+          .img-wrap
+            img(src=`./assets/img/whoCan/${subItem.icon}` alt="")
+          p=subItem.text
+    .whoCan__bottom
+      p Станьте частью масштабного городского проекта 
+      +button('Учавствовать')

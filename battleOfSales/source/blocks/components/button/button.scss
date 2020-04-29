@@ -1,0 +1,17 @@
+.button {
+  display: inline-block;
+  border: none;
+  min-width: 230px;
+  padding: 25px 45px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: $red;
+  color: $white;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 2px;
+
+  cursor: pointer;
+}

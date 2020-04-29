@@ -1,0 +1,103 @@
+.hero{
+  padding-top: 80px;
+  padding-bottom: 60px;
+  background-image: url('../img/hero/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  &__wrap{
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__text{
+    max-width: 620px;
+  }
+  &__title{
+    font-size: 41px;
+    line-height: 1.2;
+    text-align: end;
+    font-family: 'MuseoSansCyrl-700';
+    color: #535353;
+  }
+  &__desc{
+    text-align: end;
+    margin-top: 25px;
+    font-size: 27px;
+    color: #5892a6;
+    font-family: 'MuseoSansCyrl-500';
+  }
+  &__form {
+    margin-top: 70px;
+    padding-top: 40px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 35px;
+    text-align: center;
+    max-width: 300px;
+    background: #ffffff;
+    box-shadow: 0px 0px 38px 0px rgba(104, 176, 201, 0.34);
+    border-radius: 20px;
+    &-wrap {
+      display: flex;
+      justify-content: flex-end;
+    }
+    &-title {
+      font-family: 'MuseoSansCyrl-700';
+      font-size: 20px;
+      color: #5892a6;
+      line-height: 1;
+      margin-bottom: 15px;
+    }
+    &-desc {
+      line-height: 1.2;
+      font-size: 12px;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+    // button
+    .input {
+      margin-bottom: 15px;
+    }
+
+  }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    background: #ebf2f7;
+    background-image: none;
+    &__title,
+    &__desc {
+      text-align: left;
+    }
+    &__form-wrap {
+      justify-content: start;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    padding-left: 10%;
+    &__title {
+      font-size: 30px;
+    }
+    &__desc {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .hero {
+    padding-left: 0;
+    &__title {
+      font-size: 25px;
+    }
+    &__desc {
+      font-size: 18px;
+      line-height: 1.4;
+      margin-top: 20px;
+    }
+  }
+}

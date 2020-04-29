@@ -1,0 +1,77 @@
+.tarifs {
+  padding-bottom: 150px;
+  .tarifsScrollAside {
+    display: none;
+  }
+  table {
+    margin-top: 100px;
+    width: 100%;
+    tbody {
+      td {
+        text-align: center;
+        padding-bottom: 25px;
+  
+      }
+      .textTd{
+        text-align: left;
+        width: 370px;
+        font-size: 14px;
+        color: #4f4f4f;
+        line-height: 1;
+        font-weight: 300;
+      }
+    }
+   
+    thead {
+      td {
+        font-size: 18px;
+        font-weight: 900;
+        padding-bottom: 40px;
+        text-align: center;
+      }
+    }
+    tfoot {
+      text-align: center;
+      button {
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        font-size: 13px;
+        color: $red;
+        border-bottom: 1px solid $red;
+        font-weight: 700;
+        padding: 0;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .tarifs {
+    .tarifsScrollAside {
+      display: block;
+      text-align: center;
+      margin-top: 40px;
+      color: #4f4f4f;
+      font-weight: 300;
+    }
+    .table-wrap {
+      padding-bottom: 30px;
+      overflow-y: scroll;
+    }
+    table{
+      margin-top: 80px;
+      thead td {
+        font-size: 14px;
+      }
+      tbody .textTd {
+        color: #000000
+      }
+      tfoot td {
+        padding: 0 20px;
+      }
+    } 
+
+  }
+}

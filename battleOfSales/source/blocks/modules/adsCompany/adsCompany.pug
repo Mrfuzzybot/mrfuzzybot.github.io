@@ -1,0 +1,22 @@
+-
+  const adsCompanyArray = [
+    {img: 'company_1.png', text: 'Вконтакте'},
+    {img: 'company_2.png', text: 'Facebook'},
+    {img: 'company_3.png', text: 'Однокласники'},
+    {img: 'company_4.png', text: 'Instagram'},
+    {img: 'company_5.png', text: 'Яндекс'},
+    {img: 'company_6.png', text: 'Google'},
+    {img: 'company_7.png', text: 'Наружная реклама'},
+  ]
+
+section.adsCompany
+  .container
+    +sectionTitle('Рекламная кампания “Битвы скидок”')
+    p.adsCompany-text Мы будем использовать все рекламные возможности социальных сетей, городских сайтов и поисковиков. В оффлайне основным каналом будет наружная реклама.
+    .adsCompany-wrap
+      each subItem in adsCompanyArray
+        .item
+          .item__image
+            img(src=`./assets/img/adsCompany/${subItem.img}`, alt=subItem.text)
+          p=subItem.text
+    p.adsCompany__bottom Приведем людей из интернета в ваш магазин!

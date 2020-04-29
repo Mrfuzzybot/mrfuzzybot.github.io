@@ -1,0 +1,24 @@
+section.contacts#contacts
+  .paralax
+  .content
+    .container-small
+      .contacts__top
+        .contacts__top-title Остались вопросы?
+        p.contacts__top-desc  Мы всегда рады обсудить с вами подробности. Свяжитесь с нами по указанным контактам в форме или оставьте свои контактные данные!
+      .contacts__icons
+      form.contacts__form
+        .form__top
+          .input-group
+            input(type="text" placeholder="Имя" required name="name")
+          .input-group
+            input(type="email" placeholder="Email" required nema="email")
+          .input-group
+            input(type="text" placeholder="Телефон" required name="phone")
+        .form__center
+          .input-group
+            input(type="text" placeholder="Название компании" name="companyName" required)
+        .form__bottom
+          .input-group
+            textarea(type="text" placeholder="Телефон" required)
+        .form__button
+          +button('Отправить')

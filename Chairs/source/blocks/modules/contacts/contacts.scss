@@ -1,0 +1,49 @@
+.contacts {
+  padding: 50px 0;
+  background-color: #ecf3f8;
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__map {
+    max-width: 460px;
+    height: 320px;
+    margin-right: 100px;
+  }
+  &__text {
+    text-align: center;
+    &-before {
+      font-size: 16px;
+      color: #535353;
+      margin: 20px 0;
+      line-height: 1;
+    }
+    &-adress p{
+      font-size: 20px;
+      line-height: 1.2;
+      color: #68b0c9;
+      font-weight: bold;
+    }
+  }
+  &__action {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 991px) {
+  .contacts {
+    &-wrap{
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    &__action {
+      margin-top: 30px;
+    }
+    &__map{
+      margin-top: 50px;
+      margin-right: 0;
+      width: 100%;
+    }
+  }
+}
+

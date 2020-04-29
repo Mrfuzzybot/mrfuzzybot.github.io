@@ -1,0 +1,16 @@
+.footer {
+  background-color: $yellow;
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 20px;
+  &__link {
+    margin-bottom: 20px;
+    a {
+      font-size: 16px;
+    }
+  }
+  
+  img {
+    margin-bottom: 40px;
+  }
+}

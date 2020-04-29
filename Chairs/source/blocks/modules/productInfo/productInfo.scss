@@ -1,0 +1,122 @@
+.productInfo {
+  padding-top: 130px;
+  padding-bottom: 90px;
+  background-image: url('../img/productInfo/product.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__left {
+    max-width: 240px;
+    text-align: end;
+    .info__block{
+      &:nth-child(1) {
+        margin-bottom: 120px;
+        &:before {
+          background-image: url('../img/productInfo/arrow-1.png');
+          right: -135px;
+          top: 5px;
+          width: 125px;
+          height: 110px;
+        }
+      }
+      &:nth-child(2) {
+        &:before {
+          background-image: url('../img/productInfo/arrow-2.png');
+          right: -130px;
+          top: -30px;
+          width: 145px;
+          height: 60px;
+        }
+      }
+    }
+  }
+  &__right {
+    max-width: 240px;
+    .info__block{
+      &:nth-child(1) {
+        margin-bottom: 90px;
+        &:before {
+          background-image: url('../img/productInfo/arrow-3.png');
+          top: -15px;
+          left: -150px;
+          width: 150px;
+          height: 80px;
+        }
+      }
+      &:nth-child(2) {
+        margin-bottom: 40px;
+        &:before {
+          background-image: url('../img/productInfo/arrow-4.png');
+          left: -150px;
+          top: 0px;
+          width: 145px;
+          height: 55px;
+        }
+      }
+    }
+  }
+  .info__block {
+    position: relative;
+    .title {
+      font-size: 20px;
+      font-family: "MuseoSansCyrl-700";
+      color: #68b0c9;
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+    .desc {
+      color: #606060;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+    &::before {
+      content: '';
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+      position: absolute;
+    }
+  }
+  .sectionTitle {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .productInfo {
+    padding-top: 0;
+    background-image: none;
+    &__left,
+    &__right{
+      max-width: 100%;
+      padding: 0 30px 
+    }
+    .info__block{
+      text-align: left;
+      &::before {
+        content: none;
+      }
+    }
+    .sectionTitle {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .productInfo {
+    &__left .info__block,
+    &__right .info__block{
+      &:nth-child(1),
+      &:nth-child(2) {
+        margin-bottom: 40px;
+      }
+    }
+    &-wrap {
+      flex-direction: column;
+    }
+  }
+}

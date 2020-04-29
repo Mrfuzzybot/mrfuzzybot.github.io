@@ -1,0 +1,20 @@
+extends template/default
+
+block variables
+	- var title = 'Главная страница'
+	- var pageClass = 'index-page'
+	- var page = 'Home'
+
+block content
+	include ../blocks/modules/hero/hero
+	include ../blocks/modules/about/about
+	include ../blocks/modules/sale/sale
+	include ../blocks/modules/numbers/numbers
+	include ../blocks/modules/sertification/sertification
+	include ../blocks/modules/productInfo/productInfo
+	include ../blocks/modules/leadMagnit/leadMagnit
+	include ../blocks/modules/difference/difference
+	include ../blocks/modules/contacts/contacts
+	include ../blocks/modules/modals/modals
+
+	

@@ -1,0 +1,18 @@
+extends template/default
+
+block variables
+	- var title = 'Главная страница'
+	- var pageClass = 'index-page'
+	- var page = 'Home'
+
+block content
+	//You section or content
+	include ../blocks/modules/about/about
+	include ../blocks/modules/whoCan/whoCan
+	include ../blocks/modules/forWhat/forWhat
+	//- include ../blocks/modules/geo/geo
+	include ../blocks/modules/adsCompany/adsCompany
+	include ../blocks/modules/tarifs/tarifs
+	include ../blocks/modules/faq/faq
+	include ../blocks/modules/organizators/organizators
+	include ../blocks/modules/contacts/contacts
